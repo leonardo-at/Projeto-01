@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background-color: #989997;
     margin: 0;
+    box-sizing: border-box;
   }
 
 body {
@@ -103,21 +104,24 @@ h3 {
     font-size: 30px;
 }
 
-/* Footer */
-
-#zap{
-        width: 4em;
-        position: fixed;
-        z-index: 100;
-        bottom: 20px;
-        right: 1%;
-    }
 
 .centro {
     text-align: center;
 }
 
-.imagens {
-    width: 400px;
-    padding: 30px;
+.grid {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
+
+.item {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
